@@ -1,48 +1,96 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins'sans-serif;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(8, 8, 106);
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.fa-shipping-fast {
+    color: rgb(237, 52, 52);
+}
+
+.nav {
+    display: flex;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
+    background-color: white;
+    height: 80px;
     position: relative;
-    background: white;
     padding: 0;
-    border-bottom: 1px solid #e72929;
+    border-bottom: 1px solid #adacac;
 }
 
-a {
-    color: #af1313;
-}
-
-a:hover {
-    background: #e72929;
-    color: white;
-    cursor: pointer;
-}
-
-.container {
-    margin: 0 auto;
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-a.logo {
-    font-weight: bold;
-    padding: 1rem;
-}
-
-ul {
+nav ul {
     display: flex;
-    list-style-type: none;
-    margin: 0;
+    justify-content: flex-start;
 }
 
-ul a {
-    padding: 1rem;
+nav ul li {
+    list-style: none;
     display: inline-block;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-a span {
-    background: #ff4d4d;
+nav ul li a {
+    font-size: 18px;
+    color: rgb(8, 8, 106);
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(226, 78, 78);
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.fa-cart-plus {
+    color: rgb(8, 8, 106);
+    margin-top: -9px;
+    font-size: 40px;
+}
+
+.bg-danger {
+    background-color: red;
     color: white;
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size: 0.9rem;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40%;
 }
 
 .menu-container {
@@ -52,15 +100,16 @@ a span {
 .menu {
     position: absolute;
     z-index: 1;
-    background: whitesmoke;
+    background: rgb(246, 240, 240);
     display: none;
 }
 
 .menu-container:hover .menu {
     display: block;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .menu a {
-    width: 100%;
-    min-width: 8rem;
+    width: 10%
 }

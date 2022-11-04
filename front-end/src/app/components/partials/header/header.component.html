@@ -1,25 +1,27 @@
 <header>
-    <div class="container">
-        <a routerLink="/" class="logo">Food-Delivery!</a>
-        <nav>
-            <ul>
-                <li>
-                    <a routerLink="/login">Login</a>
-                </li>
-                <li class="menu-container">
-                    <a routerLink="/dashboard">John</a>
-                    <div class="menu">
-                        <a routerLink="/profile">Profile</a>
-                        <a routerLink="/orders">Orders</a>
-                        <a routerLink="/logout">Logout</a>
-                    </div>
-                </li>
-                <li>
-                    <a routerLink="/cart-page">
-            Cart <span>3</span>
-          </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+
+        <div class=" logo ">
+            <i style="font-size:40px; " class="fas fa-shipping-fast ">&nbsp;
+              </i>
+            <strong class="logo">Food Delivery</strong>
+        </div>
+        <ul>
+            <li>
+                <a routerLink="/login">Login</a>
+            </li>
+            <li class="menu-container">
+                <a routerLink="/dashboard"> Dashboard</a>
+                <div class="menu">
+                    <a routerLink="/profile">Profile</a>
+                    <a routerLink="/orders">Orders</a>
+                    <a routerLink="/logout">Logout</a>
+                </div>
+            </li>
+            <div class="cart">
+                <i class="fas fa-cart-plus"></i>
+                <div class="badge bg-danger">5</div>
+            </div>
+        </ul>
+    </nav>
 </header>
