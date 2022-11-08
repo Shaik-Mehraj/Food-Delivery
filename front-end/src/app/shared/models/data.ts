@@ -101,7 +101,7 @@ export const food_items_list:Food[]=[{
 },
 {
   id: 10,
-  name: '  Chicken pakoda ',
+  name: 'Chicken pakoda',
   cookTime: '15-30',
   price: 270,
   favorite: false,

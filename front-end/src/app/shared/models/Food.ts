@@ -1,7 +1,4 @@
 export class Food{
-  static getAllFoods(): Food[] {
-    throw new Error('Method not implemented.');
-  }
   id!:number;
   name!:string;
   price!:number;
@@ -11,5 +8,6 @@ export class Food{
   imageUrl!:string;
   origins!:string[];
   cookTime!:string;
+  static getFoodById: any;
 }
 

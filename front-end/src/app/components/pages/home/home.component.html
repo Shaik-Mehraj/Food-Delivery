@@ -14,8 +14,9 @@
                     &hearts;
                     </span>
                 </div>
-                <div class=" stars ">
-                    <!-- star rating goes here -->
+                <div class="stars">
+                    <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="gold" uncheckedcolor="black" size="22px" [readonly]="true">
+                    </star-rating>
                 </div>
                 <div class="product-item-footer ">
                     <div class="origins ">
