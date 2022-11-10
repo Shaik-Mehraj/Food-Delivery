@@ -6,9 +6,6 @@ import { food_items_list } from './data';
   providedIn: 'root'
 })
 export class FoodService {
-  static getAll(): any {
-    throw new Error('Method not implemented.');
-  }
 
   constructor() { }
 

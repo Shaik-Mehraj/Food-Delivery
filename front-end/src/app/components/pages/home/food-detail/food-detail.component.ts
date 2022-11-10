@@ -16,14 +16,17 @@ throw new Error('Method not implemented.');
 pageTitle: any;
 game: any;
 
-  constructor(private_food:FoodService,activate_route:ActivatedRoute){
+  constructor(private _food:FoodService,activate_route:ActivatedRoute){
   activate_route.params.subscribe((params)=>{
     if(params['id'])
-    this.food =Food.getFoodById(params['id'])
+    this.food =_food.getFoodById(params['id'])
   })
   }
 
   ngOnInit(): void {
+  }
+  addToCart(){
+
   }
 
 }
