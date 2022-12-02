@@ -3,14 +3,14 @@
                             flex-wrap: wrap;
                             justify-content: center;
                         }
-
+                        
                         ul {
                             display: flex;
                             align-items: center;
                             flex-wrap: wrap;
                             text-decoration: none;
                         }
-
+                        
                         ul li {
                             height: 370;
                             width: 350;
@@ -23,11 +23,11 @@
                             box-shadow: 0 4px 8px 0px rgba(0, 0, 0, -2), 0 6px 20px 0 rgba(188, 191, 232, 0.848);
                             overflow: hidden;
                         }
-
+                        
                         ul li a {
                             text-decoration: none;
                         }
-
+                        
                         ul li a .image {
                             height: 250px;
                             width: 100%;
@@ -36,11 +36,11 @@
                             justify-content: center;
                             object-fit: fill;
                         }
-
+                        
                         ul li a .image img {
                             object-fit: fill;
                         }
-
+                        
                         ul li a .content {
                             color: rgb(11, 41, 69);
                             margin: 5px 0px 0px 5px;
@@ -50,13 +50,13 @@
                             font-size: 19px;
                             position: relative;
                         }
-
+                        
                         .name {
                             color: rgb(196, 21, 21);
                             font-size: 23px;
                             margin-left: 40px
                         }
-
+                        
                         .heart span {
                             color: rgb(255, 8, 8);
                             font-size: 30px;
@@ -64,15 +64,15 @@
                             top: 0rem;
                             right: 1rem;
                         }
-
+                        
                         .heart span:hover {
                             color: grey;
                         }
-
+                        
                         .heart span .not {
                             color: grey;
                         }
-
+                        
                         .product-item-footer {
                             display: flex;
                             justify-content: space-between;

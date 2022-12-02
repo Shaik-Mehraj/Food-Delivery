@@ -7,7 +7,10 @@ import { CartItem } from '../models/cartItem';
   providedIn: 'root'
 })
 export class CartService {
-  private cart:cart=this.getCartToLocalStorage()
+  changeQuantity(id: number, quantity: number) {
+    throw new Error('Method not implemented.');
+  }
+  private cart:cart=this.getCartFromLocalStorage()
   private cartSubject:BehaviorSubject<cart>=new BehaviorSubject(this.cart)
 
   constructor() { }
@@ -19,8 +22,9 @@ export class CartService {
     this.setCartToLocalStorage()
   }
   removeFromCart(id:number){
-    this.cart.items=this.cart.items.filter(item=>item.food.id !=id);
+    this.cart.items=this.cart.items .filter(item=>item.food.id !=id);
     this.setCartToLocalStorage()
+
   }
   changeQuantiy(id:number,quantity:number){
     let cartItem=this.cart.items
@@ -28,6 +32,7 @@ export class CartService {
     if(!cartItem)return;
     cartItem.quantity=quantity;
       cartItem.price=quantity*cartItem?.food.price;
+      this.setCartToLocalStorage()
   }
   clearCart(){
     this.cart=new cart;
@@ -41,10 +46,12 @@ export class CartService {
     .reduce((prevSum, currentItem)=>prevSum+currentItem.price,0);
     this.cart.totalCount=this.cart.items
     .reduce((prevSum,currentItem)=>prevSum+currentItem.quantity,0)
+
     const cartJson=JSON.stringify(this.cart)
     localStorage.setItem('cart',cartJson)
+    this.cartSubject.next(this.cart);
   }
-  private getCartToLocalStorage(){
+  private getCartFromLocalStorage(){
     const cartJson=localStorage.getItem('cart');
     return cartJson? JSON.parse(cartJson):new cart();
   }

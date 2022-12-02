@@ -9,7 +9,7 @@ export const food_items_list:Food[]=[{
   origins: ['Hyderabad'],
   stars: 5,
   imageUrl:'/assets/chicken biriyani.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 2,
@@ -20,7 +20,7 @@ export const food_items_list:Food[]=[{
   origins: ['Hyderabad'],
   stars: 5,
   imageUrl:'/assets/mutton biriyani.jpeg',
-  tags: ['hyderabadi', 'chicken', 'mutton', 'non-veg', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Mutton', 'Non-veg', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 3,
@@ -31,7 +31,7 @@ export const food_items_list:Food[]=[{
   origins: ['Chinese'],
   stars: 5,
   imageUrl:'/assets/chicken lollipop.jpeg',
-  tags: ['hyderabadi', 'kebabs', 'chicken', 'Non-veg', 'chinese', 'spicy']
+  tags: ['Hyderabadi', 'kebabs', 'Chicken', 'Non-veg', 'Chinese', 'Spicy']
 },
 {
   id: 4,
@@ -42,7 +42,7 @@ export const food_items_list:Food[]=[{
   origins: ['Arabian'],
   stars: 5,
   imageUrl:'/assets/chicken shawarma.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'indian', 'arabian', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Indian', 'Arabian', 'Spicy']
 },
 {
   id: 5,
@@ -53,7 +53,7 @@ export const food_items_list:Food[]=[{
   origins: ['Hyderabad'],
   stars: 5,
   imageUrl:'/assets/bone soup.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'soups', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Soups', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 6,
@@ -64,40 +64,40 @@ export const food_items_list:Food[]=[{
   origins: ['Arabian'],
   stars: 5,
   imageUrl:'assets/mandi.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'mandi', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Mandi', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 7,
   name: ' Fried Chicken ',
-  cookTime: '15-30',
+  cookTime: '15-20',
   price: 270,
   favorite: false,
   origins: ['Hyderabad'],
   stars: 5,
   imageUrl:'assets/fried chicken.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'mandi', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Mandi', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 8,
   name: 'Egg Biryani',
-  cookTime: '15-30',
+  cookTime: '20-30',
   price: 270,
   favorite: false,
   origins: ['Andhra recipe'],
   stars: 5,
   imageUrl:'assets/egg.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'mandi', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg', 'Mandi', 'Indian', 'Biryani', 'Spicy']
 },
 {
   id:9,
   name: ' Fish Biryani ',
-  cookTime: '15-30',
+  cookTime: '20-30',
   price: 270,
   favorite: false,
   origins: ['Maharastra'],
   stars: 5,
   imageUrl:'assets/fish.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'mandi', 'indian', 'biryani', 'spicy']
+   tags: ['Hyderabadi', 'Fish', 'Non-veg',  'Indian', 'Biryani', 'Spicy']
 },
 {
   id: 10,
@@ -108,5 +108,5 @@ export const food_items_list:Food[]=[{
   origins: ['Hyderabad'],
   stars: 5,
   imageUrl:'assets/pakoda.jpeg',
-  tags: ['hyderabadi', 'chicken', 'Non-veg', 'mandi', 'indian', 'biryani', 'spicy']
+  tags: ['Hyderabadi', 'Chicken', 'Non-veg',  'Indian',  'Spicy']
 },]

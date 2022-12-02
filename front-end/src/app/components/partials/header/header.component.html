@@ -1,6 +1,5 @@
 <header>
     <nav>
-
         <div class=" logo ">
             <i style="font-size:40px; " class="fas fa-shipping-fast ">&nbsp;
               </i>
@@ -10,17 +9,20 @@
             <li>
                 <a routerLink="/login">Login</a>
             </li>
-            <li class="menu-container">
-                <a routerLink="/dashboard"> Dashboard</a>
+            <li *ngIf="user.token" class="menu-container">
+                <a routerLink="/dashboard">{{user.name}}</a>
                 <div class="menu">
                     <a routerLink="/profile">Profile</a>
                     <a routerLink="/orders">Orders</a>
-                    <a routerLink="/logout">Logout</a>
+                    <!-- <a routerLink="/logout">Logout</a> -->
+                    <a (click)="logout()">Logout</a>
                 </div>
             </li>
             <div class="cart">
-                <i class="fas fa-cart-plus"></i>
-                <div class="badge bg-danger">1</div>
+                <a routerLink="/cart-page">
+                    <i class="fas fa-cart-plus"></i>
+                </a>
+                <div class="badge bg-danger ">1</div>
             </div>
         </ul>
     </nav>
